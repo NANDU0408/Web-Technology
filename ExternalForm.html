@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learners Form</title>
+    <style>
+        body { 
+          background-size: cover;
+          background-repeat: no-repeat; 
+        }
+
+        form {
+            border: 10px solid #ccc; 
+            padding: 20px; 
+            font-style: italic;
+            text-align: center;
+        }
+
+       
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        label, input {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        label.required::after {
+            content: " *";
+            color: red;
+        }
+
+        input[type="date"] {
+            margin-right: 10px;
+            margin-left: -10px;
+        }
+
+        #Age {
+            width: 50px;
+        }
+
+        label[for="Gender"] {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div style="text-align: center; font-size: 50px;">
+            <label for="heading">Learner Licence Form</label><br/>
+            </div>
+            <div>
+            <label for="first name" class="required" style="font-weight: bolder;margin-left: 24px;">Name of the Applicant</label>
+            <input type="text" label="name" placeholder="FIRST NAME" id="first name" style="width: 300px; margin-left: 30px;" required>
+            <input type="text" label="name" placeholder="MIDDLE NAME" id="middle name" style="width: 250px; margin-left: 30px;" required>
+            <input type="text" label="name" placeholder="LAST NAME" id="last name" style="width: 350px; margin-left: 30px;" required><br/>
+                <select style="width: 162px; height: 30px; margin-left: 12px;">
+                    <option value="option1" label="Select">Option 1</option>
+                    <option value="option2">Mr</option>
+                    <option value="option3">Mrs</option>
+                    <option value="option4">Ms</option>
+                </select>
+            <input type="text" placeholder="FIRST NAME" aria-placeholder="First Name" style="width: 300px; margin-left: 39px;" required>
+            <input type="text" label="name" placeholder="MIDDLE NAME" id="Middle Name" style="width: 250px; margin-left: 30px;">
+            <input type="text" label="name" placeholder="LAST NAME" id="Last name" style="width: 350px; margin-left: 30px;" required>
+        </div>
+        <div>
+            <label for="full name"  class="required" style="font-weight: bolder">Full Name as per Records</label>
+            <input type="text" label="name" placeholder="NEW FULL NAME" id="full name" style="width: 995px; margin-left: 30px;" required>
+        </div>
+        <div>
+            <label for="Gender" style="font-weight: bolder; margin-left: 160px;" class="required">Gender</label>
+            <input type="radio" name="Gender" id="Male" style="margin-left: 34px;" required/><label for="Gender">Male</label>
+            <input type="radio" name="Gender" id="Female" required/><label for="Gender">Female</label>
+            <input type="radio" name="Gender" id="Trans Gender" required/><label for="Gender">Trans Gender</label> 
+            <label type="Date of Birth" class="required" style="margin-left: 300px; font-weight: bolder;">Date of Birth</label>
+            <input type="date" name="DATE OF BIRTH" id="DateOfBirth" style="margin-left: 24px; width: 200px;" required>
+            <label for="Age" class="required" style="margin-left: 20px; font-weight: bolder;">Age</label>
+            <input type="text" name="Age" id="Age" style="width: 70px;">
+        </div>
+        <div>
+                <label for="Place of Birth" class="required" style="font-weight: bolder; margin-left: -40px;">Place of Birth</label>
+                <input type="text" label="name" placeholder="PLACE OF BIRTH" id="first name" style="width: 220px; margin-left: 35px;" required>
+                <label for="Country" class="required" style="margin-left: 289px; font-weight: bolder;">Country of Birth</label>
+                <select style="width: 214px; height: 30px; margin-left: 19px;">
+                    <option value="option1" label="Select">Option 1</option>
+                    <option value="option2">INDIA</option>
+                    <option value="option3">USA</option>
+                    <option value="option4">NEPAL</option>
+                </select>
+        </div><br/>
+        <div>
+            <label for="Qualification" class="required" style="font-weight: bolder;margin-left: -35px;">Qualification</label>
+                <select style="width: 234px; height: 30px; margin-left: 35px;">
+                    <option value="option1" label="Select">Option 1</option>
+                    <option value="option2">BE</option>
+                    <option value="option3">MBBS</option>
+                    <option value="option4">CA</option>
+                </select>
+
+                <label for="Blood Group" style="font-weight: bolder;margin-left: 315px;">Blood Group</label>
+                <select style="width: 214px; height: 30px; margin-left: 31px;">
+                    <option value="option1" label="Unknown">Option 1</option>
+                    <option value="option2">O+</option>
+                    <option value="option3">O-</option>
+                    <option value="option4">AB+</option>
+                    <option value="option4">AB-</option>
+                    <option value="option4">A+</option>
+                    <option value="option4">A-</option>
+                    <option value="option4">B+</option>
+                    <option value="option4">B-</option>
+                </select>
+        </div><br/>
+        <div>
+            <label for="Landline Number" style="font-weight: bolder;margin-left: 57px;">Landline Number</label>
+                <input type="tel" label="name" placeholder="EX:04023659856" id="Landline Number" style="width: 221px; margin-left: 49px; height: 20px;">
+
+                <label for="Email Id" style="font-weight: bolder;margin-left: 337px;">Email Id</label>
+                <input type="email" label="name" placeholder="Ex:abc@xyz.com" id="Email Id" style="width: 320px; margin-left: 38px; height: 20px;">
+        </div><br/>
+        <div>
+            <label for="Applicants Mobile Number" style="font-weight: bolder; margin-left: -7px;">Applicants Mobile Number</label>
+            <input type="tel" name="Applicants Mobile Number" id="Applicants Mobile Number" placeholder="+91" style="width: 50px; margin-left: 52px;">
+            <input type="tel" label="name" placeholder="Ex:93******76" id="Landline Number" style="width: 221px; margin-left: 22px; height: 16px;">
+
+            <label for="Emergency Mobile Number" style="font-weight: bolder; margin-left: 122px;">Emergency Mobile Number</label>
+            <input type="tel" name="Applicants Mobile Number" id="Applicants Mobile Number" placeholder="+91" style="width: 50px; margin-left: 40px;">
+            <input type="tel" label="name" placeholder="ALTERNATE MOBILE NUMBER" id="Landline Number" style="width: 230px; margin-left: 22px; height: 16px;">
+        </div><br/>
+        <div>
+            <label for="Identification Marks 1" style="font-weight: bolder; margin-left: 19px;">Identification Marks 1</label>
+            <input type="text" name="Identification Marks 1" id="Identification Marks 1" placeholder="SCAR ON HEAD,MOLE ON RIGHT HAND,ETC" style="width: 310px; margin-left: 58px;">
+
+            <label for="Identification Marks 2" style="font-weight: bolder; margin-left: 155px;">Identification Marks 2</label>
+            <input type="text" name="Identification Marks 2" id="Identification Marks 2" placeholder="SCAR ON HEAD,MOLE ON RIGHT HAND,ETC" style="width: 320px; margin-left: 43px;">
+        </div>
+    </form>
+    
+</body>
+</html>
