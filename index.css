@@ -1,0 +1,36 @@
+.container{
+    margin: 20px;
+    padding: 10px;
+    border: 10px solid orangered;
+    color: blueviolet;
+    border-radius: 30px;
+    background-color:antiquewhite;
+    position: relative;
+    left: 370px;
+
+    
+    /* background-image: url("/river-side-morning-senary-hanging-bridge-river-side-morning-senary-hanging-bridge-243141467.webp"); */
+}
+
+body{
+    background-image: url("/river-side-morning-senary-hanging-bridge-river-side-morning-senary-hanging-bridge-243141467.webp");
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    text-align: center;
+}
+
+#paragraph{
+    color: blue;
+    text-align: center;
+}
+h1{
+    color: blueviolet;
+}
+
+a:link{
+    color: red;
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
+}
