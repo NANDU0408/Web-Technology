@@ -1,0 +1,19 @@
+.display{
+ /* display: grid; */
+ /* display: block; */
+ /* display: inline; */
+ /* display: inline-block; */
+ display: inline-flex;
+ border: 2px solid red;
+}
+span{
+    /* background-color: aquamarine; */
+    color: brown;
+}
+
+.decoration{
+    text-decoration-line:underline;
+    text-decoration-color: blueviolet;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 0.1rem;
+}

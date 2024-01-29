@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+         transform: translate(30px,30px);
+        }
+        .box{
+            height:300px;
+            width:300px;
+            background-color: orange;
+            /* transition-property: width,height; */
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            /* transition-delay: 1s; */
+        }
+        .box:hover{
+            width:100vw;
+            height:100vh;
+        }
+        .box1{
+            height:300px;
+            width:300px;
+            background-color: blue;
+            animation-name: animation;
+            /* background-color: black;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            border: 2px solid white;
+            margin: 10px;
+            color: white; */
+        }
+
+        @keyframes animation {
+            0%{background-color: aquamarine;}
+            25%{background-color: cadetblue;}
+            50%{background-color: blue;}
+            75%{background-color: bisque;}
+        }
+
+        .box1:hover{
+            width:600px;
+        }
+        .box2{
+            height:300px;
+            width:300px;
+            background-color: black;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+            border: 2px solid white;
+            margin: 10px;
+            color: white;
+        }
+        .box2:hover{
+            width:600px;
+        }
+        .box3{
+            height:300px;
+            width:300px;
+            background-color: black;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            border: 2px solid white;
+            margin: 10px;
+            color: white;
+        }
+        .box3:hover{
+            width:600px;
+        }
+        .box4{
+            height:300px;
+            width:300px;
+            background-color: black;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: step-end;
+            border: 2px solid white;
+            margin: 10px;
+            color: white;
+        }
+        .box4:hover{
+            width:600px;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <!-- <div class="box">ease-in-out</div> -->
+    <div class="box1">ease</div>
+    <!-- <div class="box2">ease-out</div> -->
+    <!-- <div class="box3">ease-in</div> -->
+    <!-- <div class="box4">step-end</div> -->
+    <!-- <div class="box5"></div> -->
+</body>
+</html>

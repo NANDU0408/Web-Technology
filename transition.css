@@ -1,0 +1,104 @@
+.div{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    transition: width 3s, height 3s,transform 4s;
+    margin-bottom: 25px;
+
+    /* transition-delay: 2s; */
+    /* it will delay the hover transition fo 2s */
+    
+}
+
+body{
+    transform: translate(100px,100px);
+    background-color: beige;
+}
+
+.div:hover{
+    width: 200px;
+    height: 300px;
+    transform: rotate(360deg);
+
+}
+
+.div1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(233, 12, 185);
+    transition:width 3s;
+    transition-timing-function: ease;
+    margin-bottom: 25px;
+    
+}
+
+.div1:hover{
+
+    width:200px;
+    /* height: 300px; */
+}
+
+.div2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(233, 207, 12);
+    transition:width 3s;
+    transition-timing-function: ease-in;
+    margin-bottom: 25px;
+    
+}
+
+.div2:hover{
+
+    width:200px;
+    /* height: 300px; */
+}
+
+.div3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(12, 233, 56);
+    transition:width 3s;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 25px;
+    
+}
+
+.div3:hover{
+
+    width:200px;
+    /* height: 300px; */
+}
+
+.div4{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(233, 12, 16);
+    transition:width 3s;
+    transition-timing-function: ease-out;
+    margin-bottom: 25px;
+    
+}
+
+.div4:hover{
+
+    width:200px;
+    /* height: 300px; */
+}
+
+.div5{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(64, 12, 233);
+    transition:width 3s;
+    transition-timing-function: step-end;
+    margin-bottom: 25px;
+    
+}
+
+.div5:hover{
+
+    width:200px;
+    /* height: 300px; */
+}
+
