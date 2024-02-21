@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Bootstrap.css">
+    <link rel="stylesheet" href="/WheatherCard.css">
+    <script src="WheatherCard.js"></script>
+    <title>Weather Form</title>
+</head>
+<body>
+
+    <div class="card-header bg-primary text-white">
+        Weather Card Report
+    </div>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            Weather Information
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="cityName">City Name</label>
+                    <input type="text" class="form-control" id="cityName" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="temperature">Temperature (°C)</label>
+                    <input type="text" class="form-control" id="temperature" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="windSpeed">Wind Speed (m/s)</label>
+                    <input type="text" class="form-control" id="windSpeed" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="longitude">Longitude</label>
+                    <input type="text" class="form-control" id="longitude" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="latitude">Latitude</label>
+                    <input type="text" class="form-control" id="latitude" readonly>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- <script src="WheatherCard.js"></script> -->
+</body>
+</html>
