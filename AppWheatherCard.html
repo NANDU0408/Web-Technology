@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Weather App</title>
+    <link rel="stylesheet" href="/Bootstrap.css">
+</head>
+<body class="bg-gradient">
+    <div class="container mt-5">
+        <div class="card mx-auto text-center
+                    p-4 shadow-lg rounded-3
+                    animate__animated animate__fadeInDown"
+            style="background: linear-gradient(to right, #f3a37e, #292e49);
+                   max-width: 500px;">
+            <h2 class="card-title mb-4 display-5 fw-bold"
+                style="font-family: 'Montserrat',
+                       sans-serif; color: rgb(46, 230, 61);">
+                  Mobile Weather
+                App
+              </h2>
+            <div class="mb-3">
+                <label for="city-input"
+                       class="form-label visually-hidden">
+                      Enter City
+                  </label>
+                <div class="input-group">
+                    <input type="text"
+                           class="form-control form-control-lg"
+                           id="city-input" placeholder="Enter City">
+                    <!-- <button class="btn btn-primary" value="search" onclick="fetchData()"
+                            style="background-color: #FF6347; border-color: #FF6347;">
+                          Get Weather
+                      </button> -->
+                      <input type="button" class="btn btn-primary" style="background-color: #FF6347; border-color: #FF6347;" value="Search" onclick="fetchData()">
+                </div>
+            </div>
+            <div id="weather-info"
+                 class="mt-4 d-none animate__animated animate__fadeIn">
+                <h3 id="city-name"
+                    class="mb-0 fs-7 fw-bold" style="color: #FFD700;"></h3>
+                <p id="date" class="text-muted mb-3 fs-6"></p>
+                <img id="weather-icon"
+                     class="mb-3" alt="Weather Icon"
+                     style="width: 90px; height: 90px;">
+                <p id="temperature"
+                   class="mb-1 fs-2 text-white fw-bold"
+                   style="color: #FFD700;"></p>
+                <p id="description"
+                   class="mb-3 fs-4 text-white"
+                   style="color: #FFD700;"></p>
+                <p id="wind-speed" class="fs-5 text-white"
+                   style="color: #FFD700;"></p>
+                <div id="extra-info" class="mt-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/AppWheatherCard.js"></script>
+</body>
+</html>
